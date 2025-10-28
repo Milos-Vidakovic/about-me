@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Education of Milos Vidakovic, Business Information Technology Student at BFH"
+    />
+    <title>Education - Milos Vidakovic</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+
+    <style>
+      /* Additional Styles for the new grouping */
+      .study-info {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--spacing-sm);
+        margin-bottom: var(--spacing-md);
+      }
+
+      .study-type,
+      .grade-info,
+      .specialization {
+        display: inline-block;
+        background: var(--light-color);
+        padding: var(--spacing-xs) var(--spacing-sm);
+        border-radius: var(--border-radius);
+        font-size: 0.9rem;
+        color: var(--text-color);
+      }
+
+      .curriculum-grouped {
+        margin-top: var(--spacing-md);
+      }
+
+      .curriculum-group {
+        margin-bottom: var(--spacing-lg);
+      }
+
+      .curriculum-group h5 {
+        font-size: 1.1rem;
+        color: var(--secondary-color);
+        margin-bottom: var(--spacing-sm);
+        font-weight: 600;
+      }
+
+      .subjects-grid-grouped {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-sm);
+        margin-bottom: var(--spacing-md);
+      }
+
+      .subject-grouped {
+        background: var(--light-color);
+        padding: var(--spacing-sm) var(--spacing-md);
+        border-radius: var(--border-radius);
+        font-size: 0.9rem;
+        text-align: left;
+        border-left: 3px solid var(--primary-color);
+        transition: var(--transition);
+      }
+
+      .subject-grouped:hover {
+        background: var(--primary-color);
+        color: white;
+        transform: translateX(5px);
+      }
+
+      /* Dark Mode Support for new elements */
+      [data-theme="dark"] .study-type,
+      [data-theme="dark"] .grade-info,
+      [data-theme="dark"] .specialization {
+        background: var(--bg-secondary);
+        color: var(--text-color);
+      }
+
+      [data-theme="dark"] .curriculum-group h5 {
+        color: var(--text-color);
+      }
+
+      [data-theme="dark"] .subject-grouped {
+        background: var(--bg-secondary);
+        color: var(--text-color);
+      }
+
+      [data-theme="dark"] .subject-grouped:hover {
+        background: var(--primary-color);
+        color: white;
+      }
+
+      /* Responsive for Tablets */
+      @media screen and (max-width: 768px) {
+        .subjects-grid-grouped {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <div class="logo">
+            <a href="../index.html">MV</a>
+          </div>
+          <div class="nav-controls">
+            <!-- Dark Mode Toggle -->
+            <div class="theme-toggle" id="themeToggle">
+              <span class="theme-icon">🌙</span>
+            </div>
+            <!-- Mobile Menu Toggle -->
+            <div class="nav-toggle" id="navToggle">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <ul class="nav-menu" id="navMenu">
+            <li><a href="../index.html">About Me</a></li>
+            <li><a href="education.html" class="active">Education</a></li>
+            <li><a href="work_experience.html">Work Experience</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h1>Education</h1>
+        </div>
+      </section>
+
+      <section class="education">
+        <div class="container">
+          <h2>Academic Background</h2>
+
+          <!-- Timeline Container -->
+          <div class="timeline">
+            <!-- BFH - Current Study -->
+            <div class="timeline-item current">
+              <div class="timeline-marker">
+                <div class="timeline-dot"></div>
+              </div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <h3>Bachelor of Science</h3>
+                  <span class="timeline-date">09.2023 - 07.2026</span>
+                </div>
+                <h4>Business Information Technology</h4>
+                <p class="institution">
+                  Bern University of Applied Sciences (BFH)
+                </p>
+
+                <div class="study-info">
+                  <span class="study-type">Full-time Study</span>
+                  <span class="grade-info">Current GPA: 5.11</span>
+                  <span class="specialization"
+                    >Specialization: Applied Artificial Intelligence</span
+                  >
+                </div>
+
+                <div class="curriculum-grouped">
+                  <h5>Main Subjects & Competencies:</h5>
+
+                  <div class="curriculum-group">
+                    <h5>Business & Management</h5>
+                    <div class="subjects-grid-grouped">
+                      <span class="subject-grouped"
+                        >Business & Economics Fundamentals</span
+                      >
+                      <span class="subject-grouped">Project Management</span>
+                      <span class="subject-grouped"
+                        >Process Management (BPMN)</span
+                      >
+                      <span class="subject-grouped">Agile Work Methods</span>
+                      <span class="subject-grouped"
+                        >Sustainable Business & IT</span
+                      >
+                      <span class="subject-grouped"
+                        >Public Innovation & Transformation</span
+                      >
+                    </div>
+                  </div>
+
+                  <div class="curriculum-group">
+                    <h5>IT & Systems Understanding</h5>
+                    <div class="subjects-grid-grouped">
+                      <span class="subject-grouped">IT Fundamentals</span>
+                      <span class="subject-grouped">Software Architecture</span>
+                      <span class="subject-grouped"
+                        >IT Service Management (ITIL)</span
+                      >
+                      <span class="subject-grouped">Governance of IT</span>
+                    </div>
+                  </div>
+
+                  <div class="curriculum-group">
+                    <h5>Data & Development</h5>
+                    <div class="subjects-grid-grouped">
+                      <span class="subject-grouped">Python Programming</span>
+                      <span class="subject-grouped"
+                        >Database Management (SQL)</span
+                      >
+                      <span class="subject-grouped"
+                        >Cybersecurity Fundamentals</span
+                      >
+                      <span class="subject-grouped"
+                        >Requirements Engineering (IREB)</span
+                      >
+                    </div>
+                  </div>
+
+                  <div class="curriculum-group">
+                    <h5>Artificial Intelligence</h5>
+                    <div class="subjects-grid-grouped">
+                      <span class="subject-grouped"
+                        >AI Concepts & Mathematical Foundations</span
+                      >
+                      <span class="subject-grouped"
+                        >Algorithm Fundamentals</span
+                      >
+                      <span class="subject-grouped"
+                        >RAG Chatbot Fundamentals</span
+                      >
+                      <span class="subject-grouped">Prompt Engineering</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- BFO - Apprenticeship -->
+            <div class="timeline-item">
+              <div class="timeline-marker">
+                <div class="timeline-dot"></div>
+              </div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <h3>Commercial Apprenticeship</h3>
+                  <span class="timeline-date">08.2020 - 07.2023</span>
+                </div>
+                <h4>With Professional Maturity Certificate</h4>
+                <p class="institution">Berufsfachschule Oberwallis BFO</p>
+
+                <div class="achievements">
+                  <div class="achievement">
+                    <h5>Federal Certificate of Competence</h5>
+                    <p>Commercial Employee Public Transport</p>
+                  </div>
+                  <div class="achievement">
+                    <h5>Professional Maturity Certificate</h5>
+                    <p>Business</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Secondary School -->
+            <div class="timeline-item">
+              <div class="timeline-marker">
+                <div class="timeline-dot"></div>
+              </div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <h3>Secondary School</h3>
+                  <span class="timeline-date">08.2017 - 07.2020</span>
+                </div>
+                <p class="institution">Orientierungsschule Visp</p>
+                <p class="description">
+                  Basic education as preparation for vocational training
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 Milos Vidakovic</p>
+      </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+  </body>
+</html>

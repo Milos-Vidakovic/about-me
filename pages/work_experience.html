@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Work Experience of Milos Vidakovic, Business Information Technology Student at BFH"
+    />
+    <title>Work Experience - Milos Vidakovic</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+
+    <style>
+      /* Timeline Header */
+      .timeline-header {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: var(--spacing-sm);
+      }
+
+      .timeline-header h3 {
+        font-family: var(--font-heading);
+        font-size: 1.5rem;
+        color: var(--primary-color);
+        margin: 0;
+        margin-top: var(--spacing-sm);
+      }
+
+      .timeline-date {
+        background: var(--primary-color);
+        color: white;
+        padding: var(--spacing-xs) var(--spacing-sm);
+        border-radius: var(--border-radius);
+        font-size: 0.9rem;
+        font-weight: 500;
+        white-space: nowrap;
+        align-self: flex-start;
+      }
+      .work-location {
+        font-size: 1rem;
+        color: var(--text-secondary);
+        margin-bottom: var(--spacing-xs);
+        font-style: normal;
+      }
+
+      .work-department {
+        display: inline-block;
+        background: var(--light-color);
+        padding: var(--spacing-xs) var(--spacing-sm);
+        border-radius: var(--border-radius);
+        font-size: 0.9rem;
+        color: var(--text-color);
+        margin-bottom: var(--spacing-md);
+      }
+
+      .tasks-list {
+        margin-top: var(--spacing-md);
+      }
+
+      .tasks-list h5 {
+        font-size: 1.1rem;
+        color: var(--secondary-color);
+        margin-bottom: var(--spacing-sm);
+        font-weight: 600;
+      }
+
+      .task-item {
+        background: var(--light-color);
+        padding: var(--spacing-sm) var(--spacing-md);
+        border-radius: var(--border-radius);
+        margin-bottom: var(--spacing-sm);
+        border-left: 3px solid var(--primary-color);
+        transition: var(--transition);
+      }
+
+      .task-item:hover {
+        background: var(--primary-color);
+        color: white;
+        transform: translateX(5px);
+      }
+
+      /* Dark Mode Support */
+      [data-theme="dark"] .work-location {
+        color: var(--text-secondary);
+      }
+
+      [data-theme="dark"] .work-department {
+        background: var(--bg-secondary);
+        color: var(--text-color);
+      }
+
+      [data-theme="dark"] .tasks-list h5 {
+        color: var(--text-color);
+      }
+
+      [data-theme="dark"] .task-item {
+        background: var(--bg-secondary);
+        color: var(--text-color);
+      }
+
+      [data-theme="dark"] .task-item:hover {
+        background: var(--primary-color);
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <div class="logo">
+            <a href="../index.html">MV</a>
+          </div>
+          <div class="nav-controls">
+            <!-- Dark Mode Toggle -->
+            <div class="theme-toggle" id="themeToggle">
+              <span class="theme-icon">🌙</span>
+            </div>
+            <!-- Mobile Menu Toggle -->
+            <div class="nav-toggle" id="navToggle">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <ul class="nav-menu" id="navMenu">
+            <li><a href="../index.html">About Me</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li>
+              <a href="work_experience.html" class="active">Work Experience</a>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h1>Work Experience</h1>
+        </div>
+      </section>
+
+      <section class="education">
+        <div class="container">
+          <h2>Professional Journey</h2>
+
+          <!-- Timeline Container -->
+          <div class="timeline">
+            <!-- Tax Administration Bern - Current Internship -->
+            <div class="timeline-item current">
+              <div class="timeline-marker">
+                <div class="timeline-dot"></div>
+              </div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <span class="timeline-date">09.2025 - 08.2026</span>
+                  <h3>Internship with a focus on Process Management</h3>
+                </div>
+                <h4>Tax Administration of the Canton of Bern</h4>
+
+                <div class="tasks-list">
+                  <h5>Main Responsibilities:</h5>
+                  <div class="task-item">
+                    Contributed to the further development and digitalization of
+                    processes across the entire tax administration
+                  </div>
+                  <div class="task-item">
+                    Modeled and maintained business processes in BPMN 2.0 using
+                    ADONIS
+                  </div>
+                  <div class="task-item">
+                    Supported internal departments with process-related
+                    questions and documentation
+                  </div>
+                  <div class="task-item">
+                    Conducted and further developed process labs for
+                    collaborative process optimization
+                  </div>
+                  <div class="task-item">
+                    Applied academic knowledge from studies to improve existing
+                    processes in practice
+                  </div>
+                  <div class="task-item">
+                    Participation in the areas of risk management, quality
+                    assurance and internal control system
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- SBB/Login - Apprenticeship -->
+            <div class="timeline-item">
+              <div class="timeline-marker">
+                <div class="timeline-dot"></div>
+              </div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <span class="timeline-date">08.2020 - 07.2023</span>
+                  <h3>Apprenticeship as Customer Advisor Public Transport</h3>
+                </div>
+                <h4>SBB AG / Login Berufsbildung</h4>
+                <p class="work-location">
+                  Contact Center Brig, Travel Centers Brig & Visp
+                </p>
+                <span class="work-location">Sales & Services Department</span>
+
+                <div class="tasks-list">
+                  <h5>Main Responsibilities:</h5>
+                  <div class="task-item">
+                    Provided advice and sales services in national and
+                    international passenger transport
+                  </div>
+                  <div class="task-item">
+                    Handled customer inquiries via phone and email
+                  </div>
+                  <div class="task-item">
+                    Provided timetable, product and tariff information
+                  </div>
+                  <div class="task-item">
+                    Organized group travel and processed reservations
+                  </div>
+                  <div class="task-item">
+                    Recorded and processed loss and disruption reports
+                  </div>
+                  <div class="task-item">
+                    Applied knowledge from customer advisor training and
+                    internal systems and tools
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 Milos Vidakovic</p>
+      </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+  </body>
+</html>
